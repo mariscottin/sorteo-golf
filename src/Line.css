@@ -1,0 +1,43 @@
+.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 6px;
+    max-width: 791px;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.line__playersAvatar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.line__playersAvatar > span {
+    margin-left: 8px;
+}
+
+@media(min-width: 950px){
+    .line{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .line__players{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .line__playersAvatar{
+        margin: 0px 9px;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        min-width: 100px;
+    }
+}

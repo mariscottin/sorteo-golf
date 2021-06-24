@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app{
   min-height: 100vh;
+  background: rgb(216, 216, 216);
+}
+
+.app__header{
+  height: 60px;
+  width: 100%;
+  background: rgb(80, 121, 197);
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+
+}
+
+.app__header-brand{
+  height: 100%;
+  width: fit-content;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__header-brand > img {
+  width: 40px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__body{
+  width: 95%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.app__body-mainTitle{
+  text-align: center;
+}
+
+.app__body-teamPage-subtitle{
+  width: 90%;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.app__form{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 28px;
+}
+
+.app__form > input{
+  flex: 0.9;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  outline-width: 0;
+  padding: 5px 9px;
+}
+
+.app__form > button{
+  padding: 6px 15px;
+  margin-left: 6px;
+  background: rgb(80, 121, 197);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 0.1;
+}
+
+.app__form > button:hover{
+  background: rgb(52, 101, 191);
+}
+
+.app__cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.app__footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__footer > button{
+  padding: 15px;
+  margin-left: 6px;
+  background: #5079c5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app__footer > button:hover{
+  background: rgb(52, 101, 191);
+}
+
+.app__footer-back{
+  color: #5079c5;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: -10px;
+}
+
+.teamsView-back{
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+}
+
+.app__teams{
+  margin-bottom: 25px;
+}
+
+.app__teams > h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.app__teams-table{
+  min-width: 180px;
+  width: 70%;
+  max-width: 330px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__teams-table__team > h3{
+  margin-bottom: 14px;
+}
+
+.app__teams-table__team > p{
+  margin-bottom: 12px;
+}
+
+.app__teams-table__line{
+  width: 1px;
+  height: inherit;
+  background: gray;
+}
+
+@media(max-width: 359px){
+  .app__form{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__form > button{
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
   }
+}
+
+@media(min-width: 790px){
+  .app__form{
+    width: 60%;
+  }
+
+  .app__body-teamPage-subtitle{
+    width: 60%;
+    margin: auto;
+  }
+
+  .app__cards-container{
+    width: 70%;
+  }
+
+  .app__teams-table{
+    width: 330px;
+  }
+
 }

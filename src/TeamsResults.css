@@ -1,0 +1,77 @@
+.teamsResults{
+    width: 90%;
+    margin: auto;
+    max-width: 791px;
+}
+
+.teamsResults > h1{
+    text-align: center;
+}
+
+.teamsResults__linesContainer{
+    margin-top: 12px;
+}
+
+.teamsResults__line{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 12px 0;
+    
+}
+
+.teamsResults__line > h3{
+    margin-bottom: 12px;
+}
+
+.teamResults__line-players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamResults__line-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 5px 12px;
+    background: rgb(241, 241, 241);
+    min-width: 130px;
+    width: fit-content;
+    border-radius: 5px;
+    height: 33px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.teamResults__line-vs{
+    margin-left: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+@media(min-width: 790px){
+
+    .teamResults__line-players{
+        flex-direction: row;
+        flex: 0.9;
+        justify-content: center;
+    }
+    .teamsResults__line{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 24px;
+        padding: 20px;
+    }
+
+    .teamResults__line-team{
+        margin: 0;
+        margin-left: 24px;
+        margin-right: 24px;
+        height: 54px;
+        padding: 12px 22px;
+    }
+}
